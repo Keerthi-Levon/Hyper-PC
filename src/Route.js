@@ -5,7 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import { Footer } from "./Layouts/Footer";
-import { Header } from "./Layouts/Header";
+import  Header  from "./Layouts/Header";
 import { HomePage } from "./Pages/HomePage/HomePage";
 
 const AppRoutes = () => {
@@ -15,9 +15,9 @@ const AppRoutes = () => {
       <Router>
         <Header/>
         <Routes>
-          <Route path="/" element={<HomePage />} />  
+          {/* <Route path="/" element={<HomePage />} />   */}
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </>
   );
