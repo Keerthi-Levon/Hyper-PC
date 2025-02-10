@@ -1,0 +1,34 @@
+.home-page-banner, .homepage-card-div {
+    background-color: var(--backgroud-color);
+    padding: 50px;
+}
+
+.home-page-banner-header p,
+.home-page-banner-header .home-icon,
+.home-page-banner p {
+    color: var(--secondary-text) !important;
+}
+
+.home-page-banner h1, .homepageCard-header {
+    color: var(--primary-text);
+    font-size: 50px;
+    font-weight: 800;
+}
+.homepageCard-header{
+    text-align: center;
+    font-size: 40px;
+}
+
+.home-banner-div {
+    background-image: url("../../Assets/Images/home-banner-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--card-backgroud-color);
+    border-radius: 15px;
+    padding: 80px 0px 0px 60px;
+}
+.homePage-card{
+    background-color: var(--card-backgroud-color);
+    padding: 10px;
+}
