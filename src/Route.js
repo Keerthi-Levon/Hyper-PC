@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate
 } from "react-router-dom";
 import { Footer } from "./Layouts/Footer";
 import { Header } from "./Layouts/Header";
