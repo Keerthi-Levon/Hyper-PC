@@ -24,7 +24,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/gaming-pcs">Gaming PCs</Link> &nbsp;
+                  <Link to="/gaming-pcs">Gaming PCs</Link> 
                   <FaChevronRight className="breadcrumb-arrow" />
                 </li>
                 <li>

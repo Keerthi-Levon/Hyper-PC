@@ -1,21 +1,20 @@
 import React, { useState } from 'react';
 import { ShoppingCartOutlined, UserOutlined, BarChartOutlined, SendOutlined, GlobalOutlined } from '@ant-design/icons';
-import './Layout.css';
 import logo from "../Assets/Images/hyperpc-logo.svg";
-
 const Header = () => {
   const [isSubNavVisible, setIsSubNavVisible] = useState(false);
 
   return (
     <div className="header-container">
+      {/* Top Bar */}
       <div className="top-bar">
         <div className="top-bar-left">
           <span>
-            <SendOutlined />{" "}
+            <SendOutlined />
             <span>United Arab Emirates</span>
           </span>
-          <span >
-            <GlobalOutlined />{" "}
+          <span>
+            <GlobalOutlined />
             <span>English</span>
           </span>
         </div>
@@ -24,9 +23,10 @@ const Header = () => {
         </div>
       </div>
 
+      {/* Main Navigation */}
       <div className="main-nav">
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <img src={logo} alt="Logo" className="logo-icon" />
+          <img src={logo} alt="HYPERPC Logo" className="logo-icon" />
           <nav className="nav-links">
             <div
               className="nav-link"
@@ -35,12 +35,11 @@ const Header = () => {
             >
               Gaming PCs
             </div>
-            <a href="#" className="nav-link">Workstations</a>
-            <a href="#" className="nav-link">Servers</a>
-            <a href="#" className="nav-link">Accessories</a>
-            <a href="#" className="nav-link">Services</a>
-            <a href="#" className="nav-link">Support</a>
-            <a href="#" className="nav-link">Company</a>
+            {['Workstations', 'Servers', 'Accessories', 'Services', 'Support', 'Company'].map((item) => (
+              <a key={item} href="#" className="nav-link">
+                {item}
+              </a>
+            ))}
           </nav>
         </div>
         <div className="nav-icons">
@@ -50,54 +49,110 @@ const Header = () => {
         </div>
       </div>
 
+      {/* Dropdown Menu */}
       {isSubNavVisible && (
         <div
           className="sub-nav"
           onMouseEnter={() => setIsSubNavVisible(true)}
           onMouseLeave={() => setIsSubNavVisible(false)}
         >
+          {/* Model Range */}
           <div className="sub-nav-column">
             <h3>Model range</h3>
             <div className="sub-nav-links">
-              <a href="#" className="sub-nav-bar">All models</a>
-              <a href="#" className="sub-nav-bar">In stock</a>
-              <a href="#" className="sub-nav-bar">Help me choose</a>
-              <a href="#" className="sub-nav-bar">Configurator</a>
+              {['All models', 'In stock', 'Help me choose', 'Configurator'].map((item) => (
+                <a key={item} href="#" className="sub-nav-bar">
+                  {item}
+                </a>
+              ))}
             </div>
           </div>
 
-          <div className="sub-nav-column">
+          {/* Select by Tasks */}
+          <div className="col">
             <h3>Select by Tasks</h3>
             <div className="sub-nav-links">
-              <a href="#" className="sub-nav-link">For Work and Study</a>
-              <a href="#" className="sub-nav-link">For eSports</a>
-              <a href="#" className="sub-nav-link">For streaming</a>
-              <a href="#" className="sub-nav-link">PCs for 2K Gaming</a>
-              <a href="#" className="sub-nav-link">PCs for 4K Gaming</a>
+              {[
+                'For Work and Study',
+                'For eSports',
+                'For streaming',
+                'PCs for 2K Gaming',
+                'PCs for 4K Gaming'
+              ].map((item) => (
+                <a key={item} href="#" className="sub-nav-link">
+                  {item}
+                </a>
+              ))}
             </div>
+
+
+            <h3>Select by Graphics Cards</h3>
+            <div className="sub-nav-links">
+              {[
+                'GeForce RTX 4060 / Ti',
+                'GeForce RTX 4070 / Ti',
+                'GeForce RTX 4080',
+                'GeForce RTX 5080',
+                'GeForce RTX 5090'
+              ].map((item) => (
+                <a key={item} href="#" className="sub-nav-link">
+                  {item}
+                </a>
+              ))}
+              </div>
           </div>
 
-          <div className="sub-nav-column">
+          {/* Select by Game */}
+          <div className="col">
             <h3>Select by Game</h3>
             <div className="sub-nav-links">
-              <a href="#" className="sub-nav-link">Counter-Strike 2</a>
-              <a href="#" className="sub-nav-link">DOTA 2</a>
-              <a href="#" className="sub-nav-link">PUBG</a>
-              <a href="#" className="sub-nav-link">GTA 5</a>
-              <a href="#" className="sub-nav-link">View all games</a>
+              {[
+                'Counter-Strike 2',
+                'DOTA 2',
+                'PUBG',
+                'GTA 5',
+                'View all games'
+              ].map((item) => (
+                <a key={item} href="#" className="sub-nav-link">
+                  {item}
+                </a>
+              ))}
+            </div>
+
+            <h3>Select by Price</h3>
+            <div className="sub-nav-links">
+              {[
+                'AED 10,000',
+                'AED 15,000',
+                'AED 20,000',
+                'AED 25,000'
+              ].map((item) => (
+                <a key={item} href="#" className="sub-nav-link">
+                  {item}
+                </a>
+              ))}
             </div>
           </div>
 
+          {/* Select by feature */}
           <div className="sub-nav-column">
             <h3>Select by feature</h3>
             <div className="sub-nav-links">
-              <a href="#" className="sub-nav-link">Wall mounted computer</a>
-              <a href="#" className="sub-nav-link">Touchscreen computer</a>
-              <a href="#" className="sub-nav-link">Gaming Station</a>
-              <a href="#" className="sub-nav-link">Compact PC</a>
-              <a href="#" className="sub-nav-link">Powered by ASUS</a>
+              {[
+                'Wall mounted computer',
+                'Touchscreen computer',
+                'Gaming Station',
+                'Compact PC',
+                'Powered by ASUS'
+              ].map((item) => (
+                <a key={item} href="#" className="sub-nav-link">
+                  {item}
+                </a>
+              ))}
             </div>
           </div>
+
+        
         </div>
       )}
     </div>
