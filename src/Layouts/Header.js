@@ -10,7 +10,6 @@ import logo from "../Assets/Images/hyperpc-logo.svg";
 const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
 
-  // Menu data structure
   const menuData = {
     "Gaming PCs": {
       columns: [
@@ -157,12 +156,60 @@ const Header = () => {
     Accessories: {
       columns: [
         {
-          title: "Peripherals",
-          links: ["Keyboards", "Mice", "Monitors", "Headsets"],
+          title: "Model Range",
+          links: ["All accessories", "Monitors", "Keyboards", "Mice", "Headsets"],
         },
         {
-          title: "Components",
-          links: ["Graphics Cards", "Memory", "Storage", "Power Supplies"],
+          title: "Additionally",
+          links: ["Mouse pads", "Microphones", "Chairs"],
+        },
+      ],
+    },
+    Services: {
+      columns: [
+        {
+          title: "Our Services",
+          links: ["Upgrade", "Trade-In", "Maintenance"],
+        },
+        {
+          title: "For business",
+          links: ["Opening of computer clubs",],
+          
+        },
+      ],
+    },
+    Support: {
+      columns: [
+        {
+          title: "For buyers",
+          links: ["Installment", "Delivery and Payment", "Warranty","Trade in"],
+        },
+        {
+          title: "For Owners",
+          links: ["Return and exchange"],
+          secondSection: {
+            links: ["Why us?", "FAQ"],
+          },
+        },
+      ],
+    },
+    Company: {
+      columns: [
+        {
+          title: "Company",
+          links: ["Contacts", "About Us", "Production"],
+        },
+        {
+          title: "Project",
+          links: ["Blogers","eSports","Expo"],
+        },
+        {
+          title: "Blog",
+          links: ["News and Articles"],
+        },
+        {
+          title: "Our Social Media",
+          links: ["Facebook","Instagram","YouTube"],
         },
       ],
     },
@@ -170,24 +217,21 @@ const Header = () => {
 
   return (
     <div className="header-container">
-      {/* Top Bar */}
       <div className="top-bar">
         <div className="top-bar-left">
           <span>
-            <SendOutlined />
+            <SendOutlined />{" "}
             <span>United Arab Emirates</span>
           </span>
           <span>
-            <GlobalOutlined />
+            <GlobalOutlined />{" "}
             <span>English</span>
           </span>
         </div>
         <div className="top-bar-right">+971 4 526 3600</div>
       </div>
 
-      {/* Main Navigation Container */}
       <div className="nav-container">
-        {/* Main Navigation */}
         <div className="main-nav">
           <div className="nav-left">
             <img src={logo} alt="HYPERPC Logo" className="logo-icon" />
@@ -206,11 +250,6 @@ const Header = () => {
                     />
                   )}
                 </div>
-              ))}
-              {["Services", "Support", "Company"].map((item) => (
-                <a key={item} href="#" className="nav-link">
-                  {item}
-                </a>
               ))}
             </nav>
           </div>
