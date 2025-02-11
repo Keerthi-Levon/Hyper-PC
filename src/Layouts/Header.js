@@ -11,7 +11,6 @@ import MobileHeader from "./MobileHeader";
 const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
 
-  // Menu data structure
   const menuData = {
     "Gaming PCs": {
       columns: [
@@ -224,11 +223,11 @@ const Header = () => {
       <div className="top-bar">
         <div className="top-bar-left">
           <span>
-            <SendOutlined />
+            <SendOutlined /> &nbsp;
             <span>United Arab Emirates</span>
           </span>
           <span>
-            <GlobalOutlined />
+            <GlobalOutlined />&nbsp;
             <span>English</span>
           </span>
         </div>
