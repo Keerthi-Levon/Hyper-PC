@@ -25,11 +25,12 @@
 .home-banner-div {
     background-image: url("../../Assets/Images/home-banner-bg.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-position: right;
     background-color: var(--card-backgroud-color);
     border-radius: 15px;
     padding: 80px 0px 0px 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .homePage-card {
@@ -171,4 +172,15 @@
     font-size: 13px;
     font-weight: 700;
     color: var(--primary-text) !important;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+    .home-banner-div {
+      background-image: none;
+    }
+  }
+  
+@media (max-width: 768px) {
+	.home-banner-div {
+	  background-image: none;
+	}
 }

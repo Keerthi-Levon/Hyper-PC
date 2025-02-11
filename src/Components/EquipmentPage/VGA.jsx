@@ -3,10 +3,10 @@ import VGA from "../../Assets/Images/VGA.png";
 
 const VGAPage = () => {
   return (
-    <div className="equipment-page-head">
-      <div className="container">
+    <div className="equipment-page-head ">
+      <div className="container ">
         <div className="row align-items-center">
-          <div className="col-lg-6 equipment-cpu-text">
+          <div className="col-lg-6 p-4 equipment-cpu-text">
             <h5>VGA</h5>
             <h4>ASUS ROG Astral GeForce RTX 5080 Black [16GB, 10752 CUDA]</h4>
             <p>

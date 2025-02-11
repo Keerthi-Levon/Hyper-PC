@@ -31,121 +31,132 @@
   font-size: 20px;
 }
 
-  .custom-cart-btn {
-	display: flex;
-	align-items: center;
-	background: linear-gradient(to right, #dcff71 50%, var(--card-backgroud-color) 50%);
-	background-size: 200% 100%;
-	background-position: right bottom;
-	color: var(--primary-text);
-	font-weight: bold;
-	padding: 0px 10px 0px 0px;
-	border: none;
-	position: relative;
-	overflow: hidden;
-	cursor: pointer;
-	transition: background-position 0.5s ease-in-out;
-	border-right: 1px solid var(--primary-yellow);
-  }
-  .cart-icon-section {
-	background-color: var(--primary-yellow);
-	padding: 12px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
-  }
-  .cart-icon-section svg {
-	font-size: 20px;
-	color: var(--backgroud-color); 
-  }
-  .cart-text {
-	padding-left: 12px;
-	letter-spacing: 1px;
-	font-size: 14px;
-  }
-  .custom-cart-btn:hover {
-	background-position: left bottom;
-	color: var(--card-backgroud-color); 
-  }
-  
-  .custom-cart-btn:hover .cart-icon-section {
-	background-color: #dcff71;
-  }
+.custom-cart-btn {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    #dcff71 50%,
+    var(--card-backgroud-color) 50%
+  );
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: var(--primary-text);
+  font-weight: bold;
+  padding: 0px 10px 0px 0px;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-position 0.5s ease-in-out;
+  border-right: 1px solid var(--primary-yellow);
+}
+.cart-icon-section {
+  background-color: var(--primary-yellow);
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
+}
+.cart-icon-section svg {
+  font-size: 20px;
+  color: var(--backgroud-color);
+}
+.cart-text {
+  padding-left: 12px;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+.custom-cart-btn:hover {
+  background-position: left bottom;
+  color: var(--card-backgroud-color);
+}
 
-  .configurator-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 10px;
-	gap: 10px; 
-	border-radius: 4px;
-  }
-  
-  .config-icon {
-	border: 2px solid var(--secondary-text);
-	padding: 8px;
-	border-radius: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-top: -12px;
-  }
-  
-  .config-icon svg {
-	color: var(--secondary-text);
-	font-size: 18px;
-  }
-  
-  .config-text {
-	display: flex;
-	flex-direction: column;
-  }
-  
-  .config-text .title {
-	font-weight: bold;
-	color: #ff9800;
-	font-size: 14px;
-	margin-bottom: 4px;
-  }
-  
-  .config-text .subtitle,
-  .loan-calculator {
-	color: var(--secondary-text); 
-	font-size: 14px;
-	text-decoration: underline dotted; 
-	cursor: pointer;
-  }
-  .loan-calculator:hover {
-	color: var(--primary-text); 
-  }
-  .config-text .subtitle:hover {
-	color: var(--primary-text);
-  }
-  .config-text-one .title {
-	font-weight: bold;
-	color: var(--secondary-text);
-	font-size: 14px;
-	margin-bottom: 4px;
-  }
-  .config-text-one .subtitle{
-	color: var(--secondary-text); 
-	font-size: 14px;
-	cursor: pointer;
-  }
+.custom-cart-btn:hover .cart-icon-section {
+  background-color: #dcff71;
+}
 
-  /* #keerthi-------------- */
-  .Gaming-performance-container{
-	background-color: var(--backgroud-color);
+.configurator-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 4px;
+}
+
+.config-icon {
+  border: 2px solid var(--secondary-text);
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -12px;
+}
+
+.config-icon svg {
+  color: var(--secondary-text);
+  font-size: 18px;
+}
+
+.config-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.config-text .title {
+  font-weight: bold;
+  color: #ff9800;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.config-text .subtitle,
+.loan-calculator {
+  color: var(--secondary-text);
+  font-size: 14px;
+  text-decoration: underline dotted;
+  cursor: pointer;
+}
+.loan-calculator:hover {
+  color: var(--primary-text);
+}
+.config-text .subtitle:hover {
+  color: var(--primary-text);
+}
+.config-text-one .title {
+  font-weight: bold;
+  color: var(--secondary-text);
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.config-text-one .subtitle {
+  color: var(--secondary-text);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* #keerthi-------------- */
+.Gaming-performance-container {
+  background-color: var(--backgroud-color);
+}
+.gaming-performance-title {
+  color: var(--primary-text);
+  font-size: 42px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .cyber-banner-section {
+    background-image: none;
   }
-  .gaming-performance-title{
-	color: var(--primary-text);
-	font-size: 42px;
-	text-align: center;
-	padding-top: 25px;
+}
+
+@media (max-width: 768px) {
+  .cyber-banner-section {
+    background-image: none;
   }
-  @media (max-width: 767px) {
-	.cyber-banner-section {
-	  background-image: none;
-	}
 }
