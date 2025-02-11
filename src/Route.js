@@ -8,6 +8,7 @@ import  Footer  from "./Layouts/Footer";
 import  Header  from "./Layouts/Header";
 // import { HomePage } from "./Pages/HomePage/HomePage";
 import CyberIndexPage from "./Pages/CyberPage/CyberIndexPage";
+import EquipmentPage from "./Pages/EquipmentPage/EquipmentPage";
 
 const AppRoutes = () => {
   
@@ -18,7 +19,9 @@ const AppRoutes = () => {
         <Routes>
           {/* <Route path="/" element={<HomePage />} />   */}
           <Route path="/" element={<CyberIndexPage />} />  
+          {/* <Route path="/equipment-page" element={<EquipmentPage />} />  */}
         </Routes>
+
          <Footer /> 
       </Router>
     </>
