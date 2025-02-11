@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom"; 
 import homeIcon from "../../Assets/Images/home-icon.png";
 import { FaChevronRight } from "react-icons/fa6";
-import banner from "../../Assets/Images/home-banner-bg.png";
+import banner from "../../Assets/Images/home-banner-bg - Copy.png";
 
 import "../../Pages/HomePage/Home.css";
 export const HomeBanner = () => {
@@ -45,7 +45,7 @@ export const HomeBanner = () => {
             <img
             src={banner}
             alt="Cyber Banner"
-            className="img-fluid d-block d-lg-none my-3"
+            className="d-block d-lg-none my-3 home-banner-image"
           />
           </div>
           <div className="col-lg-7"></div>

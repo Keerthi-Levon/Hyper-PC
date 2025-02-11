@@ -183,4 +183,22 @@
 	.home-banner-div {
 	  background-image: none;
 	}
+    .home-page-banner h1,
+.homepageCard-header {
+    color: var(--primary-text);
+    font-size: 30px;
+    font-weight: 800;
+}
+.home-page-banner,
+.homepage-card-div {
+    background-color: var(--backgroud-color);
+    padding: 20px;
+}
+.home-banner-div {
+padding: 20px 10px;
+}
+.home-banner-image{
+    width: 100%;
+    height: 250px;
+}
 }

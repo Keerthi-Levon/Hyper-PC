@@ -159,4 +159,14 @@
   .cyber-banner-section {
     background-image: none;
   }
+  .cyber-banner-add-to-cart{
+	display: flex;
+	flex-direction: column;
+}
+
+}
+.cyber-banner-add-to-cart{
+	display: flex;
+	gap: 20px;
+	align-items: center;
 }

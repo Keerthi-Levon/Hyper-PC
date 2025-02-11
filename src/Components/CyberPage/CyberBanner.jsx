@@ -1,6 +1,6 @@
 import React from "react";
 import { RiMenuAddLine } from "react-icons/ri";
-import banner from "../../Assets/Images/home-card-bg.png";
+import banner from "../../Assets/Images/home-card-bg.jpg";
 import { FiClock, FiShoppingCart, FiUsers } from "react-icons/fi";
 import { IoSettingsOutline } from "react-icons/io5";
 
@@ -28,7 +28,7 @@ const CyberBanner = () => {
             className="img-fluid d-block d-lg-none my-3"
           />
           <hr className="border-line-cyber" />
-          <div className="d-flex align-items-center gap-4">
+          <div className=" cyber-banner-add-to-cart">
             <div className="price-cyber">
               <span className="mb-1">Price AED 24,520</span>
               <p className="loan-calculator">Loan calculator</p>
