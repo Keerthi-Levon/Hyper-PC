@@ -1,17 +1,32 @@
 import React from 'react'
-import { GiMoebiusTriangle } from "react-icons/gi";
+import { Link } from "react-router-dom"; // Import Link for navigation
+import homeIcon from "../../Assets/Images/home-icon.png"
 import { FaChevronRight } from "react-icons/fa6";
 import '../../Pages/HomePage/Home.css'
 export const HomeBanner = () => {
   return (
     <div className='home-page-banner'>
-      <div className='d-flex gap-3 align-items-center px-4 home-page-banner-header'>
-        <GiMoebiusTriangle size={22} className='home-icon '/>
-        <FaChevronRight size={11} className='home-icon'/>
-        <p className='mb-0'>Gaming PCs</p>
-        <FaChevronRight size={11} className='home-icon'/>
-        <p className='mb-0'>Gaming PCs with NVIDIA GeForce RTX 5080</p>
-      </div>
+     <nav >
+            <div >
+              <ul className="breadcrumb">
+                <li>
+                  <Link to="/">
+                  <img src={homeIcon} className="homeIcon"/> &nbsp;
+                  <FaChevronRight className="breadcrumb-arrow" />
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/gaming-pcs">Gaming PCs</Link> 
+                  <FaChevronRight className="breadcrumb-arrow" />
+                </li>
+                <li>
+                  <Link to="/gaming-pcs/nvidia-geforce-rtx-5080">
+                    Gaming PCs with NVIDIA GeForce RTX 5080
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </nav>
       <div className='home-banner-div mt-5'>
         <div className="row">
           <div className='col-lg-5'>
