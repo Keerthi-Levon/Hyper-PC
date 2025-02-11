@@ -63,24 +63,16 @@ const software = [
 ];
 
 const Section = ({ title, items }) => (
-  <div className="mb-5">
+  <div className="section-container">
     <h4 className="specific-title">{title}</h4>
-    <hr style={{ color: "#c0ff01", fontWeight: 900 }} />
+    <hr className="section-divider" />
     {items.map((item, index) => (
-      <div
-        key={index}
-        className="d-flex justify-content-between align-items-center py-2 specific-buttom-border"
-      >
-        <div className="d-flex align-items-center gap-2 specific-title-text">
-          {item.icon}
+      <div key={index} className="spec-row">
+        <div className="spec-label">
+          <span className="icon">{item.icon}</span>
           <span>{item.label}</span>
         </div>
-        <div
-          className="text-left specific-value-text"
-          style={{ whiteSpace: "pre-line" }}
-        >
-          {item.value}
-        </div>
+        <div className="spec-value">{item.value}</div>
       </div>
     ))}
   </div>
@@ -88,8 +80,8 @@ const Section = ({ title, items }) => (
 
 const SpecificationsPage = () => {
   return (
-    <div className="equipment-page-head py-4">
-      <div className="container">
+    <div className="equipment-page-head">
+      <div className="container mx-5 ">
         <div className="equipment-page-title">
           <h3>Specifications HYPERPC CYBER</h3>
         </div>
@@ -100,7 +92,9 @@ const SpecificationsPage = () => {
             className="equipment-specifications-image"
           />
         </div>
-        <div className="p-6">
+      </div>
+      <div className="container equipment-specification-container" >
+        <div className="specifications-content">
           <Section title="Hardware" items={specifications} />
           <Section title="Personalization" items={personalization} />
           <Section title="Software" items={software} />
