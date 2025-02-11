@@ -7,8 +7,10 @@ import { IoSettingsOutline } from "react-icons/io5";
 const CyberBanner = () => {
   return (
     <>
-      <div className="row cyber-banner-section p-5">
-        <div className="col-lg-6"></div>
+      <div className=" cyber-banner-section p-4">
+        <div className="container">
+          <div className="row">
+          <div className="col-lg-6"></div>
         <div className="col-lg-6 cyber-banner-content">
           <h2 className="mb-2">
             HYPERPC <br /> <span className="text-uppercase">CYBER</span>
@@ -80,6 +82,9 @@ const CyberBanner = () => {
             </div>
           </div>
         </div>
+          </div>
+        </div>
+        
       </div>
     </>
   );
