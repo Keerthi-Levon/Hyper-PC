@@ -8,20 +8,23 @@ const CyberBanner = () => {
   return (
     <>
       <div className="row cyber-banner-section p-5">
-        <div className="col-lg-6">
-          <img src={banner} alt="banner" className="cyber-banner-image" />
-        </div>
+        <div className="col-lg-6"></div>
         <div className="col-lg-6 cyber-banner-content">
-          <h2 className=" mb-2">
+          <h2 className="mb-2">
             HYPERPC <br /> <span className="text-uppercase">CYBER</span>
           </h2>
-          <p className="mb-3 banner-link ">
+          <p className="mb-3 banner-link">
             <RiMenuAddLine /> Compare
           </p>
           <p className="cyber-content">
             Ready for the future. Aggressive futuristic design, made for true
             cyber warriors.
           </p>
+          <img
+            src={banner}
+            alt="Cyber Banner"
+            className="img-fluid d-block d-lg-none my-3"
+          />
           <hr className="border-line-cyber" />
           <div className="d-flex align-items-center gap-4">
             <div className="price-cyber">
