@@ -6,9 +6,7 @@ import {
 } from "react-router-dom";
 import  Footer  from "./Layouts/Footer";
 import  Header  from "./Layouts/Header";
-// import { HomePage } from "./Pages/HomePage/HomePage";
 import CyberIndexPage from "./Pages/CyberPage/CyberIndexPage";
-import EquipmentPage from "./Pages/EquipmentPage/EquipmentPage";
 import { HomePage } from "./Pages/HomePage/HomePage";
 
 const AppRoutes = () => {
@@ -18,7 +16,6 @@ const AppRoutes = () => {
       <Router>
         <Header/>
         <Routes>
-          {/* <Route path="/equipment-page" element={<EquipmentPage />} />  */}
           <Route path="/" element={<HomePage />} />  
           <Route path="/gaming-pc/cyber" element={<CyberIndexPage />} />  
         </Routes>

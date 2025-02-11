@@ -199,7 +199,7 @@ const SpecificationsPage = () => {
               </ul>
             </div>
           </div>
-          <hr className="equipment-page-horizontal-line"></hr>
+          <hr className="equipment-page-horizontal-line mb-0"></hr>
         </div>
       </div>
     </div>
