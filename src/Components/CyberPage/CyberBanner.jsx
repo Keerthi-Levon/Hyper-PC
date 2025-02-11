@@ -9,7 +9,6 @@ const CyberBanner = () => {
     <>
       <div className="row cyber-banner-section p-5">
         <div className="col-lg-6">
-          <img src={banner} alt="banner" className="cyber-banner-image" />
         </div>
         <div className="col-lg-6 cyber-banner-content">
           <h2 className=" mb-2">
