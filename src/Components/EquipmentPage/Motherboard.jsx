@@ -3,7 +3,7 @@ import Motherboard from "../../Assets/Images/Motherboard.png";
 
 const MotherboardPage = () => {
   return (
-    <div className="equipment-page-head">
+    <div className=" equipment-page-head">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6">
@@ -13,7 +13,7 @@ const MotherboardPage = () => {
               className="equipment-cpu-image"
             />
           </div>
-          <div className="col-lg-6 equipment-cpu-text">
+          <div className="col-lg-6 p-4 equipment-cpu-text">
             <h5>Motherboard</h5>
             <h4>ASUS ROG STRIX X870-A GAMING [DDR5, Wi-Fi]</h4>
             <p>

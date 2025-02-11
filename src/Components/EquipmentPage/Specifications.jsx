@@ -1,205 +1,109 @@
 import React from "react";
-import specifications from "../../Assets/Images/specifications.png";
+import { GoCpu } from "react-icons/go";
+import { BsMotherboard } from "react-icons/bs";
+import {
+  FaMemory,
+  FaSnowflake,
+  FaHdd,
+  FaPowerOff,
+  FaDesktop,
+  FaFan,
+  FaLightbulb,
+  FaWindows,
+} from "react-icons/fa";
+import specific from "../../Assets/Images/specifications.png";
+
+const specifications = [
+  {
+    icon: <GoCpu />,
+    label: "CPU",
+    value: "AMD Ryzen 7 9800X3D [up to 5.2GHz, 8 cores]",
+  },
+  {
+    icon: <BsMotherboard />,
+    label: "MOTHERBOARD",
+    value: "ASUS ROG STRIX X870-A GAMING [DDR5, Wi-Fi]",
+  },
+  {
+    icon: <FaMemory />,
+    label: "RAM",
+    value: "32GB Corsair DOMINATOR Titanium RGB White [DDR5, 6400MHz, 2x16GB]",
+  },
+  {
+    icon: <FaSnowflake />,
+    label: "COOLING",
+    value: "NZXT Kraken Elite 360 RGB Black",
+  },
+  {
+    icon: <FaHdd />,
+    label: "SSD",
+    value:
+      "2TB Samsung 990 PRO [7450MB/s, Gen4] \n 1TB Samsung 990 PRO [7450MB/s, Gen4]",
+  },
+  {
+    icon: <FaPowerOff />,
+    label: "POWER SUPPLY",
+    value: "1000W ASUS ROG STRIX Aura Edition [80+ Gold]",
+  },
+  { icon: <FaDesktop />, label: "CASES", value: "Antec Torque White" },
+  { icon: <FaFan />, label: "FANS", value: "6 x NZXT F120 RGB Core White" },
+];
+
+const personalization = [
+  {
+    icon: <FaLightbulb />,
+    label: "CUSTOM CABLES",
+    value: "CableMod Pro Kit White",
+  },
+  { icon: <FaLightbulb />, label: "LIGHTING", value: "Standard Violet" },
+];
+
+const software = [
+  { icon: <FaWindows />, label: "OS", value: "Windows 11 Pro" },
+];
+
+const Section = ({ title, items }) => (
+  <div className="mb-5">
+    <h4 className="specific-title">{title}</h4>
+    <hr style={{ color: "#c0ff01", fontWeight: 900 }} />
+    {items.map((item, index) => (
+      <div
+        key={index}
+        className="d-flex justify-content-between align-items-center py-2 specific-buttom-border"
+      >
+        <div className="d-flex align-items-center gap-2 specific-title-text">
+          {item.icon}
+          <span>{item.label}</span>
+        </div>
+        <div
+          className="text-left specific-value-text"
+          style={{ whiteSpace: "pre-line" }}
+        >
+          {item.value}
+        </div>
+      </div>
+    ))}
+  </div>
+);
 
 const SpecificationsPage = () => {
   return (
-    <div className="equipment-page-head">
+    <div className="equipment-page-head py-4">
       <div className="container">
         <div className="equipment-page-title">
           <h3>Specifications HYPERPC CYBER</h3>
         </div>
         <div>
           <img
-            src={specifications}
+            src={specific}
             alt="cpu"
             className="equipment-specifications-image"
           />
         </div>
-        <div className="specifications-page">
-          <div className="specifications-page-head">
-            <h4>Hardware</h4>
-            <hr className="specifications-page-horizontal-line"></hr>
-            <div className="d-flex justify-content-between">
-              <div>
-                <h5>VGA</h5>
-              </div>
-              <div>
-                <ul>
-                  <li>
-                    ASUS ROG Astral GeForce RTX 5080 Black [16GB, 10752 CUDA]
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <hr className="equipment-page-horizontal-line"></hr>
-            <div className="d-flex justify-content-between">
-              <div>
-                <h5>CPU</h5>
-              </div>
-              <div>
-                <ul>
-                  <li>AMD Ryzen 7 9800X3D [up to 5.2GHz, 8 cores]</li>
-                </ul>
-              </div>
-            </div>
-            <hr className="equipment-page-horizontal-line"></hr>
-            <div className="d-flex justify-content-between">
-              <div>
-                <h5>Motherboard</h5>
-              </div>
-              <div>
-                <ul>
-                  <li>ASUS ROG STRIX X870-A GAMING [DDR5, Wi-Fi]</li>
-                </ul>
-              </div>
-            </div>
-            <hr className="equipment-page-horizontal-line"></hr>
-            <div className="d-flex justify-content-between">
-              <div>
-                <h5>RAM</h5>
-              </div>
-              <div>
-                <ul>
-                  <li>
-                    32GB Corsair DOMINATOR Titanium RGB White [DDR5, 6400MHz,
-                    2x16GB]
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <hr className="equipment-page-horizontal-line"></hr>
-            <div className="d-flex justify-content-between">
-              <div>
-                <h5>COOLING</h5>
-              </div>
-              <div>
-                <ul>
-                  <li>NZXT Kraken Elite 360 RGB Black</li>
-                </ul>
-              </div>
-            </div>
-            <hr className="equipment-page-horizontal-line"></hr>
-            <div className="d-flex justify-content-between">
-              <div>
-                <h5>SSD</h5>
-              </div>
-              <div>
-                <ul>
-                  <li>2TB Samsung 990 PRO [7450MB/s, Gen4]</li>
-                  <li>1TB Samsung 990 PRO [7450MB/s, Gen4]</li>
-                </ul>
-              </div>
-            </div>
-            <hr className="equipment-page-horizontal-line"></hr>
-            <div className="d-flex justify-content-between">
-              <div>
-                <h5>Power supply</h5>
-              </div>
-              <div>
-                <ul>
-                  <li>1000W ASUS ROG STRIX Aura Edition [80+ Gold]</li>
-                </ul>
-              </div>
-            </div>
-            <hr className="equipment-page-horizontal-line"></hr>
-            <div className="d-flex justify-content-between">
-              <div>
-                <h5>Cases</h5>
-              </div>
-              <div>
-                <ul>
-                  <li>Antec Torque White</li>
-                </ul>
-              </div>
-            </div>
-            <hr className="equipment-page-horizontal-line"></hr>
-            <div className="d-flex justify-content-between">
-              <div>
-                <h5>Fans</h5>
-              </div>
-              <div>
-                <ul>
-                  <li>6 x NZXT F120 RGB Core White</li>
-                </ul>
-              </div>
-            </div>
-            <hr className="equipment-page-horizontal-line"></hr>
-          </div>
-        </div>
-
-        <div className="specifications-page-head">
-          <h4>Personalization</h4>
-          <hr className="specifications-page-horizontal-line"></hr>
-          <div className="d-flex justify-content-between">
-            <div>
-              <h5>Custom cables</h5>
-            </div>
-            <div>
-              <ul>
-                <li>CableMod Pro Kit White</li>
-              </ul>
-            </div>
-          </div>
-          <hr className="equipment-page-horizontal-line"></hr>
-          <div className="d-flex justify-content-between">
-            <div>
-              <h5>Lighting</h5>
-            </div>
-            <div>
-              <ul>
-                <li>Standard Violet</li>
-              </ul>
-            </div>
-          </div>
-          <hr className="equipment-page-horizontal-line"></hr>
-        </div>
-
-        <div className="specifications-page-head">
-          <h4>Software</h4>
-          <hr className="specifications-page-horizontal-line"></hr>
-          <div className="d-flex justify-content-between">
-            <div>
-              <h5>OS</h5>
-            </div>
-            <div>
-              <ul>
-                <li>Windows 11 Pro</li>
-              </ul>
-            </div>
-          </div>
-          <hr className="equipment-page-horizontal-line"></hr>
-        </div>
-
-        <div className="specifications-page-head">
-          <h4>Service</h4>
-          <hr className="specifications-page-horizontal-line"></hr>
-          <div className="d-flex justify-content-between">
-            <div>
-              <h5>Warranty</h5>
-            </div>
-            <div>
-              <ul>
-                <li>HYPERPC Warranty Standard - 12 month</li>
-                <li>
-                  Coverage of all manufacturing defects and system failures
-                </li>
-                <li>Free replacement of defective components</li>
-              </ul>
-            </div>
-          </div>
-          <hr className="equipment-page-horizontal-line"></hr>
-          <div className="d-flex justify-content-between">
-            <div>
-              <h5>Production</h5>
-            </div>
-            <div>
-              <ul>
-                <li>Standard production time</li>
-                <li>Production according to the estimated deadlines</li>
-              </ul>
-            </div>
-          </div>
-          <hr className="equipment-page-horizontal-line mb-0"></hr>
+        <div className="p-6">
+          <Section title="Hardware" items={specifications} />
+          <Section title="Personalization" items={personalization} />
+          <Section title="Software" items={software} />
         </div>
       </div>
     </div>
