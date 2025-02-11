@@ -76,3 +76,18 @@
 }
 
 
+.specific-title{
+  font-size: 24px;
+  color: var(--primary-text);
+}
+.specific-buttom-border {
+  border-bottom: 1px solid var(--secondary-text);
+}
+.specific-title-text{
+  color: var(--secondary-text);
+  font-size: 14px;
+}
+.specific-value-text{
+  font-size: 16px;
+  color: var(--primary-text);
+}

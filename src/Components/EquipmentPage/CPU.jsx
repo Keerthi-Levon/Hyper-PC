@@ -3,7 +3,7 @@ import CPU from "../../Assets/Images/CPU.png";
 
 const CPUPage = () => {
   return (
-    <div className="equipment-page-head">
+    <div className=" equipment-page-head">
       <div className="container">
         <div className=" equipment-page-title">
           <h3>Equipment HYPERPC CYBER</h3>
@@ -13,7 +13,7 @@ const CPUPage = () => {
           <div className="col-lg-6">
             <img src={CPU} alt="cpu" className="equipment-cpu-image" />
           </div>
-          <div className="col-lg-6 equipment-cpu-text">
+          <div className="col-lg-6 p-4 equipment-cpu-text">
             <h5>CPU</h5>
             <h4>AMD Ryzen 7 9800X3D [up to 5.2GHz, 8 cores]</h4>
             <p>
