@@ -7,9 +7,11 @@ import {
   GlobalOutlined,
 } from "@ant-design/icons";
 import logo from "../Assets/Images/hyperpc-logo.svg";
+import MobileHeader from "./MobileHeader";
 const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
 
+  // Menu data structure
   const menuData = {
     "Gaming PCs": {
       columns: [
@@ -216,22 +218,26 @@ const Header = () => {
   };
 
   return (
+    <>
     <div className="header-container">
+      {/* Top Bar */}
       <div className="top-bar">
         <div className="top-bar-left">
           <span>
-            <SendOutlined />{" "}
+            <SendOutlined />
             <span>United Arab Emirates</span>
           </span>
           <span>
-            <GlobalOutlined />{" "}
+            <GlobalOutlined />
             <span>English</span>
           </span>
         </div>
         <div className="top-bar-right">+971 4 526 3600</div>
       </div>
 
+      {/* Main Navigation Container */}
       <div className="nav-container">
+        {/* Main Navigation */}
         <div className="main-nav">
           <div className="nav-left">
             <img src={logo} alt="HYPERPC Logo" className="logo-icon" />
@@ -251,6 +257,11 @@ const Header = () => {
                   )}
                 </div>
               ))}
+              {/* {["Services", "Support", "Company"].map((item) => (
+                <a key={item} href="#" className="nav-link">
+                  {item}
+                </a>
+              ))} */}
             </nav>
           </div>
           <div className="nav-icons">
@@ -310,6 +321,8 @@ const Header = () => {
         )}
       </div>
     </div>
+     <MobileHeader menuData={menuData} />
+     </>
   );
 };
 
