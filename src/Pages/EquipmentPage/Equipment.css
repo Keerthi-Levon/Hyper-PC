@@ -42,7 +42,8 @@
 }
 
 .equipment-specifications-image {
-  width: 100%;
+  width: 500px;
+  height: 400px;
 }
 
 .equipment-page-head {
@@ -115,4 +116,22 @@
 }
 .equipment-specification-container{
   margin-left: 80px;
+}
+@media (max-width: 768px) {
+  .equipment-cpu-image{
+    height: 250px;
+    }
+    .spec-row{
+      display: block;
+    }
+    .equipment-specification-container{
+      margin-left: 0px;
+    }
+    .equipment-cpu-text h4{
+      font-size: 23px;
+    }
+    .equipment-specifications-image {
+      width: 350px;
+      height: 250px;
+    }
 }

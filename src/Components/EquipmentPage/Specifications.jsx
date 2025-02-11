@@ -81,11 +81,11 @@ const Section = ({ title, items }) => (
 const SpecificationsPage = () => {
   return (
     <div className="equipment-page-head">
-      <div className="container mx-5 ">
+      <div className="">
         <div className="equipment-page-title">
           <h3>Specifications HYPERPC CYBER</h3>
         </div>
-        <div>
+        <div className="d-flex justify-content-center">
           <img
             src={specific}
             alt="cpu"
