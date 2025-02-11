@@ -7,8 +7,8 @@ const CyberIndexPage = () => {
 	return (
 		<>
 		  <CyberBanner />
-		  <EquipmentPage />
 		  <GamingPerformanceChart/>
+		  <EquipmentPage />
 		</>
 	)
 }
