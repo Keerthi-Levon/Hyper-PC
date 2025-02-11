@@ -1,0 +1,131 @@
+.cyber-banner-image {
+  width: 100%;
+  height: 400px;
+  margin-left: 100px;
+}
+.cyber-banner-section {
+  background-color: var(--backgroud-color);
+}
+.cyber-banner-content h2 {
+  color: var(--primary-text);
+}
+.banner-link {
+  color: var(--secondary-text) !important;
+  cursor: pointer;
+}
+.banner-link:hover {
+  color: var(--primary-text) !important;
+}
+.cyber-content {
+  color: var(--secondary-text);
+  font-size: 18px;
+  font-weight: 900;
+}
+.border-line-cyber {
+  color: var(--secondary-text);
+}
+.price-cyber span {
+  color: var(--primary-text);
+  font-size: 20px;
+}
+
+
+.custom-cart-btn {
+	display: flex;
+	align-items: center;
+	background-color: var(--card-backgroud-color);
+	color: var(--primary-text);
+	font-weight: bold;
+	padding: 0px 10px 0px 0px;
+	border: none;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	border-right: 1px solid var(--primary-yellow); 
+  }
+  
+  .cart-icon-section {
+	background-color: var(--primary-yellow);
+	padding: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
+  }
+  
+  .cart-icon-section svg {
+	font-size: 20px;
+	color: var(--backgroud-color); 
+  }
+  .cart-text {
+	padding-left: 12px;
+	letter-spacing: 1px;
+	font-size: 14px;
+  }
+  .custom-cart-btn:hover {
+	background-color: #333;
+  }
+  
+  .custom-cart-btn:hover .cart-icon-section {
+	background-color: var(--primary-yellow);
+  }
+  
+  .configurator-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	gap: 10px; 
+	border-radius: 4px;
+  }
+  
+  .config-icon {
+	border: 2px solid var(--secondary-text);
+	padding: 8px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: -12px;
+  }
+  
+  .config-icon svg {
+	color: var(--secondary-text);
+	font-size: 18px;
+  }
+  
+  .config-text {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .config-text .title {
+	font-weight: bold;
+	color: #ff9800;
+	font-size: 14px;
+	margin-bottom: 4px;
+  }
+  
+  .config-text .subtitle,
+  .loan-calculator {
+	color: var(--secondary-text); 
+	font-size: 14px;
+	text-decoration: underline dotted; 
+	cursor: pointer;
+  }
+  
+  .config-text .subtitle:hover {
+	color: var(--primary-text);
+  }
+  .config-text-one .title {
+	font-weight: bold;
+	color: var(--secondary-text);
+	font-size: 14px;
+	margin-bottom: 4px;
+  }
+  .config-text-one .subtitle{
+	color: var(--secondary-text); 
+	font-size: 14px;
+	cursor: pointer;
+  }
