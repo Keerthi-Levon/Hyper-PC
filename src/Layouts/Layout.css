@@ -300,10 +300,10 @@
 	background-color: var(--card-backgroud-color);
   }
   
-  .sub-nav-column h3 {
+  .sub-nav h3 {
 	color: var(--secondary-text);
 	font-size: 14px;
-	margin-bottom: 20px;
+	margin: 20px 0;
 	font-weight: normal;
   }
   
