@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Layout.css";
 import {
   FaYoutube,
@@ -9,7 +9,62 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom"; // Import Link for navigation
 import homeIcon from "../Assets/Images/home-icon.png"
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+
 const Footer = () => {
+  const [openDropdown, setOpenDropdown] = useState(null);
+
+
+  const toggleDropdown = (index) => {
+    setOpenDropdown(openDropdown === index ? null : index);
+  };
+  const footerData = [
+    {
+      title: "Gaming PCs",
+      links: ["All models", "In stock", "Configurator", "Help me choose"],
+    },
+    {
+      title: "Workstations",
+      links: ["All models", "Configurator", "Help me choose"],
+    },
+    {
+      title: "Servers",
+      links: ["HYPERPC FORCE", "HYPERPC HYDRO"],
+    },
+    {
+      title: "Accessories",
+      links: ["All Accessories", "Monitors", "Keyboards", "Mice", "Headsets", "Mouse Pads", "Microphones", "Chairs"],
+    },
+    {
+      title: "Services",
+      links: ["All Services", "Modernization", "Trade-In", "Maintenance"],
+    },
+    {
+      title: "For Business",
+      links: ["Game clubs"],
+    },
+    {
+      title: "For Owners",
+      links: ["Return and Exchange"],
+    },
+    {
+      title: "For Buyers",
+      links: ["Installment", "Payment and delivery", "Warranty", "Trade-in"],
+    },
+    {
+      title: "Company",
+      links: ["Contacts", "About us", "Production", "Career", "Blog"],
+    },
+    {
+      title: "Projects",
+      links: ["Bloggers", "eSports", "Events"],
+    },
+    {
+      title: "Blog",
+      links: ["News and Articles"],
+    },
+  ];
+
   return (
     <>
       <footer className="main-footer">
@@ -19,12 +74,12 @@ const Footer = () => {
               <ul className="breadcrumb">
                 <li>
                   <Link to="/">
-                  <img src={homeIcon} className="homeIcon"/> &nbsp;
-                  <FaChevronRight className="breadcrumb-arrow" />
+                    <img src={homeIcon} className="homeIcon" /> &nbsp;
+                    <FaChevronRight className="breadcrumb-arrow" />
                   </Link>
                 </li>
                 <li>
-                  <Link to="/gaming-pcs">Gaming PCs</Link> 
+                  <Link to="/gaming-pcs">Gaming PCs</Link>
                   <FaChevronRight className="breadcrumb-arrow" />
                 </li>
                 <li>
@@ -35,9 +90,28 @@ const Footer = () => {
               </ul>
             </div>
           </nav>
-          <hr/>
-          <div className="row">
-            {/* Gaming PCs Column */}
+          <hr />
+          <div className="mobile-footer">
+            {footerData.map((section, index) => (
+              <div key={index} className="dropdown">
+                <h5 onClick={() => toggleDropdown(index)} className="dropdown-header">
+                  {section.title}
+                  <span className="dropdown-icon">
+                    {openDropdown === index ? <FaChevronUp /> : <FaChevronDown />}
+                  </span>
+                </h5>
+                <ul className={`footer-nav ${openDropdown === index ? "show-dropdown" : ""}`}>
+                  {section.links.map((link, idx) => (
+                    <li key={idx}>
+                      <a href="#">{link}</a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          <div className="desktop-footer row">
+            {/* {/ Gaming PCs Column /} */}
             <div className="col">
               <h5>Gaming PCs</h5>
               <ul className="footer-nav">
@@ -69,7 +143,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Servers & Accessories Column */}
+            {/* {/ Servers & Accessories Column /} */}
             <div className="col">
               <h5>Servers</h5>
               <ul className="footer-nav">
@@ -110,7 +184,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Services Column */}
+            {/* {/ Services Column /} */}
             <div className="col">
               <h5>Services</h5>
               <ul className="footer-nav">
@@ -136,7 +210,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* For buyers Column */}
+            {/* {/ For buyers Column /} */}
             <div className="col">
               <h5>For Owners</h5>
               <ul className="footer-nav">
@@ -162,7 +236,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Projects Column */}
+            {/* {/ Projects Column /} */}
             <div className="col">
               <h5>Company</h5>
               <ul className="footer-nav">
@@ -205,9 +279,9 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Bottom Section */}
+          {/* {/ Bottom Section /} */}
           <div className="footer-bottom">
-            <div className="d-flex justify-content-between">
+            <div className="d-flex justify-content-between flex-column flex-md-row">
               <div className="visit-info">
                 We invite you to visit our{" "}
                 <a href="#" className="highlight">
@@ -234,7 +308,7 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            <hr></hr>
+            <hr className="d-none d-md-block" />
             <div className="footer-meta">
               <div className="copyright">Copyright © 2009-2025 HYPERPC</div>
               <div className="footer-links">

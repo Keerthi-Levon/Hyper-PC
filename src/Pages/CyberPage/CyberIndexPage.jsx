@@ -7,7 +7,7 @@ const CyberIndexPage = () => {
 	return (
 		<>
 		  <CyberBanner />
-		  {/* <GamingPerformanceChart/> */}
+		  <GamingPerformanceChart/>
 		  <EquipmentPage />
 		</>
 	)
