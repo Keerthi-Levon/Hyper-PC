@@ -1,4 +1,5 @@
-.home-page-banner, .homepage-card-div {
+.home-page-banner,
+.homepage-card-div {
     background-color: var(--backgroud-color);
     padding: 50px;
 }
@@ -9,12 +10,14 @@
     color: var(--secondary-text) !important;
 }
 
-.home-page-banner h1, .homepageCard-header {
+.home-page-banner h1,
+.homepageCard-header {
     color: var(--primary-text);
     font-size: 50px;
     font-weight: 800;
 }
-.homepageCard-header{
+
+.homepageCard-header {
     text-align: center;
     font-size: 40px;
 }
@@ -28,7 +31,144 @@
     border-radius: 15px;
     padding: 80px 0px 0px 60px;
 }
-.homePage-card{
+
+.homePage-card {
     background-color: var(--card-backgroud-color);
     padding: 10px;
+    border-radius: 15px;
+    padding: 40px 30px;
+}
+
+.homecard-whiteCircle {
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.homecard-whiteCircle::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+.home-card-text {
+    text-align: center;
+    color: var(--primary-text);
+}
+
+.home-card-text p {
+    color: var(--secondary-text) !important;
+}
+
+.configurate-button {
+    color: var(--primary-yellow);
+    border: 1px solid var(--primary-yellow);
+    border-radius: 50px;
+    background: none;
+    padding: 10px 60px;
+}
+
+.configurate-button:hover {
+    color: var(--primary-yellow-hover);
+    border: 1px solid var(--primary-yellow-hover);
+}
+
+.detaiils-button {
+    color: var(--backgroud-color);
+    border: none;
+    border-radius: 50px;
+    background: var(--primary-yellow);
+    padding: 10px 117px;
+}
+
+.detaiils-button:hover {
+    background: var(--primary-yellow-hover);
+}
+
+.EPS-game-div {
+    background-color: var(--small-div-bg-color);
+    border-radius: 8px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+.EPS-game-div:hover {
+    background-color: var(--small-div-bg-hover);
+}
+
+
+.EPS-game-div p,
+.fullSpecification {
+    color: var(--secondary-text);
+}
+
+.EPS-game-div h6 {
+    color: var(--primary-text);
+    font-weight: 600;
+}
+
+.homeCard-items-div {
+    background-color: var(--homeCardItems-div-bg);
+    border-radius: 8px;
+    padding: 0px 15px 5px 15px;
+}
+
+.homeCard-items-div .title {
+    color: var(--secondary-text);
+    font-size: 14px;
+}
+
+.homeCard-items-div .description {
+    color: var(--primary-text);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.card-divider {
+    border-color: var(--secondary-text);
+}
+
+.fullSpecification {
+    cursor: pointer;
+}
+
+.fullSpecification:hover {
+    color: var(--primary-yellow);
+}
+
+.homeCard-add-button {
+    color: var(--backgroud-color);
+    background-color: var(--primary-yellow);
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 22%;
+    left: 45%;
+}
+
+.Card-graph-icon {
+    position: absolute;
+    top: 2%;
+    right: 7%;
+    opacity: 0;
+}
+.homePage-card:hover .Card-graph-icon {
+    opacity: 1; 
+}
+.home-cardGraph-count{
+    position: absolute;
+    top: 28%;
+    left: 29%;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--primary-text) !important;
 }

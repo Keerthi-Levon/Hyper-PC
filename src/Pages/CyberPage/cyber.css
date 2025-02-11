@@ -133,3 +133,15 @@
 	font-size: 14px;
 	cursor: pointer;
   }
+
+
+  /* #keerthi-------------- */
+  .Gaming-performance-container{
+	background-color: var(--backgroud-color);
+  }
+  .gaming-performance-title{
+	color: var(--primary-text);
+	font-size: 42px;
+	text-align: center;
+	padding-top: 25px;
+  }
