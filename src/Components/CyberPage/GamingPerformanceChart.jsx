@@ -129,7 +129,7 @@ const CustomLegend = () => (
             borderRadius: 2,
           }}
         />
-        <span style={{ color: "white", fontSize: 14 }}>
+        <span style={{ color: "var(--secondary-text)", fontSize: 14 }}>
           {key} (
           {key === "1920x1080"
             ? "FullHD"
@@ -184,14 +184,14 @@ const GamingPerformanceChart = () => {
                 <CartesianGrid strokeDasharray="3 3" stroke="#333" />
                 <XAxis
                   type="number"
-                  stroke="white"
+                  stroke="var(--secondary-text)"
                   fontSize={isMobile ? 10 : 14}
                 />
                 {!isMobile && (
                   <YAxis
                     type="category"
                     dataKey="name"
-                    stroke="white"
+                    stroke="var(--secondary-text)"
                     tick={{ fontSize: 14 }}
                   />
                 )}
@@ -200,7 +200,7 @@ const GamingPerformanceChart = () => {
                   <LabelList
                     dataKey="1920x1080"
                     position="right"
-                    fill="white"
+                    fill="var(--secondary-text)"
                     fontSize={isMobile ? 10 : 12}
                   />
                 </Bar>
@@ -208,7 +208,7 @@ const GamingPerformanceChart = () => {
                   <LabelList
                     dataKey="2560x1440"
                     position="right"
-                    fill="white"
+                    fill="var(--secondary-text)"
                     fontSize={isMobile ? 10 : 12}
                   />
                 </Bar>
@@ -216,7 +216,7 @@ const GamingPerformanceChart = () => {
                   <LabelList
                     dataKey="3840x2160"
                     position="right"
-                    fill="white"
+                    fill="var(--secondary-text)"
                     fontSize={isMobile ? 10 : 12}
                   />
                 </Bar>
