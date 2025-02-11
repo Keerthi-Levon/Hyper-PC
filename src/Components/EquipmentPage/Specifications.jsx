@@ -15,7 +15,7 @@ const SpecificationsPage = () => {
             className="equipment-specifications-image"
           />
         </div>
-        <div className="specifications-page-head">
+        <div className="specifications-page">
           <div className="specifications-page-head">
             <h4>Hardware</h4>
             <hr className="specifications-page-horizontal-line"></hr>
@@ -127,79 +127,79 @@ const SpecificationsPage = () => {
           </div>
         </div>
 
-        
         <div className="specifications-page-head">
-            <h4>Personalization</h4>
-            <hr className="specifications-page-horizontal-line"></hr>
-            <div className="d-flex justify-content-between">
-              <div>
-                <h5>Custom cables</h5>
-              </div>
-              <div>
-                <ul>
-                  <li>CableMod Pro Kit White</li>
-                </ul>
-              </div>
+          <h4>Personalization</h4>
+          <hr className="specifications-page-horizontal-line"></hr>
+          <div className="d-flex justify-content-between">
+            <div>
+              <h5>Custom cables</h5>
             </div>
-            <hr className="equipment-page-horizontal-line"></hr>
-            <div className="d-flex justify-content-between">
-              <div>
-                <h5>Lighting</h5>
-              </div>
-              <div>
-                <ul>
-                  <li>Standard Violet</li>
-                </ul>
-              </div>
+            <div>
+              <ul>
+                <li>CableMod Pro Kit White</li>
+              </ul>
             </div>
-            <hr className="equipment-page-horizontal-line"></hr>
+          </div>
+          <hr className="equipment-page-horizontal-line"></hr>
+          <div className="d-flex justify-content-between">
+            <div>
+              <h5>Lighting</h5>
+            </div>
+            <div>
+              <ul>
+                <li>Standard Violet</li>
+              </ul>
+            </div>
+          </div>
+          <hr className="equipment-page-horizontal-line"></hr>
         </div>
 
         <div className="specifications-page-head">
-            <h4>Software</h4>
-            <hr className="specifications-page-horizontal-line"></hr>
-            <div className="d-flex justify-content-between">
-              <div>
-                <h5>OS</h5>
-              </div>
-              <div>
-                <ul>
-                  <li>Windows 11 Pro</li>
-                </ul>
-              </div>
+          <h4>Software</h4>
+          <hr className="specifications-page-horizontal-line"></hr>
+          <div className="d-flex justify-content-between">
+            <div>
+              <h5>OS</h5>
             </div>
-            <hr className="equipment-page-horizontal-line"></hr>
+            <div>
+              <ul>
+                <li>Windows 11 Pro</li>
+              </ul>
+            </div>
+          </div>
+          <hr className="equipment-page-horizontal-line"></hr>
         </div>
 
-
         <div className="specifications-page-head">
-            <h4>Service</h4>
-            <hr className="specifications-page-horizontal-line"></hr>
-            <div className="d-flex justify-content-between">
-              <div>
-                <h5>Warranty</h5>
-              </div>
-              <div>
-                <ul>
-                  <li>HYPERPC Warranty Standard - 12 month</li>
-                  <li>Coverage of all manufacturing defects and system failures</li>
-                  <li>Free replacement of defective components</li>
-                </ul>
-              </div>
+          <h4>Service</h4>
+          <hr className="specifications-page-horizontal-line"></hr>
+          <div className="d-flex justify-content-between">
+            <div>
+              <h5>Warranty</h5>
             </div>
-            <hr className="equipment-page-horizontal-line"></hr>
-            <div className="d-flex justify-content-between">
-              <div>
-                <h5>Production</h5>
-              </div>
-              <div>
-                <ul>
-                  <li>Standard production time</li>
-                  <li>Production according to the estimated deadlines</li>
-                </ul>
-              </div>
+            <div>
+              <ul>
+                <li>HYPERPC Warranty Standard - 12 month</li>
+                <li>
+                  Coverage of all manufacturing defects and system failures
+                </li>
+                <li>Free replacement of defective components</li>
+              </ul>
             </div>
-            <hr className="equipment-page-horizontal-line"></hr>
+          </div>
+          <hr className="equipment-page-horizontal-line"></hr>
+          <div className="d-flex justify-content-between">
+            <div>
+              <h5>Production</h5>
+            </div>
+            <div>
+              <ul>
+                <li>Standard production time</li>
+                <li>Production according to the estimated deadlines</li>
+              </ul>
+            </div>
+          </div>
+          <hr className="equipment-page-horizontal-line"></hr>
         </div>
       </div>
     </div>
